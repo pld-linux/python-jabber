@@ -1,9 +1,9 @@
 %include	/usr/lib/rpm/macros.python
 
 %define		module	jabber
-%define pre	rc6
+%define		pre	rc6
 
-Summary:	"jabber.py" python module for Jabber applications
+Summary:	"jabber.py" Python module for Jabber applications
 Summary(pl):	Modu³y Pythona "jabber.py" dla aplikacji Jabber
 Name:		python-%{module}
 Version:	0.5
