@@ -21,13 +21,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 jabber.py is a Python module for the Jabber instant messaging
-protocol. jabber.py deals with the xml parsing and socket code,
+protocol. jabber.py deals with the XML parsing and socket code,
 leaving the programmer to concentrate on developing quality Jabber
 based applications with Python.
 
 %description -l pl
 jabber.py to modu³ Pythona do protoko³u komunikatora Jabber. jabber.py
-obs³uguje analizowanie XML i gniazda, pozwalaj±c programi¶cie
+obs³uguje analizowanie XML-a i gniazda, pozwalaj±c programi¶cie
 skoncentrowaæ siê na tworzeniu w Pythonie wysokiej jako¶ci aplikacji
 opartych na Jabberze.
 
