@@ -47,8 +47,9 @@ python setup.py install \
 
 cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}-%{pre}
 
+install -d $RPM_BUILD_ROOT%{py_sitescriptdir}
 echo "jabber" > $RPM_BUILD_ROOT%{py_sitescriptdir}/jabber.pth
-rm -f $RPM_BUILD_ROOT%{py_sitescriptdir}/jabber/*.py
+rm -f $RPM_BUILD_ROOT%{py_sitedir}/jabber/*.py
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CREDITS ChangeLog README
 %{py_sitescriptdir}/jabber.pth
-%dir %{py_sitescriptdir}/jabber
-%{py_sitescriptdir}/jabber/*.py[co]
+%dir %{py_sitedir}/jabber
+%{py_sitedir}/jabber/*.py[co]
 %dir %{_examplesdir}/%{name}-%{version}-%{pre}
 %{_examplesdir}/%{name}-%{version}-%{pre}/*
