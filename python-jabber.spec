@@ -7,7 +7,7 @@ Summary:	"jabber.py" python module for Jabber applications
 Summary(pl):	Modu³y Pythona "jabber.py" dla aplikacji Jabber
 Name:		python-%{module}
 Version:	0.5
-Release:	1.%{pre}.1
+Release:	1.%{pre}.2
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/jabberpy/jabberpy-%{version}-%{pre}.tar.gz
@@ -45,7 +45,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}-%{pre}
 # still required, please
 # see also:
 # http://sourceforge.net/tracker/index.php?func=detail&aid=897527&group_id=30215&atid=398567
-touch jabber/__init__.py
+echo 'from jabber import *' > jabber/__init__.py
 
 python setup.py install \
 	--root=$RPM_BUILD_ROOT \
