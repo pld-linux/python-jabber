@@ -7,7 +7,7 @@ Summary:	"jabber.py" python module for Jabber applications
 Summary(pl):	Modu³y Pythona "jabber.py" dla aplikacji Jabber
 Name:		python-%{module}
 Version:	0.5
-Release:	0.%{pre}.2
+Release:	0.%{pre}.3
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/jabberpy/jabberpy-%{version}-%{pre}.tar.gz
@@ -50,6 +50,8 @@ cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}-%{pre}
 install -d $RPM_BUILD_ROOT%{py_sitescriptdir}
 echo "jabber" > $RPM_BUILD_ROOT%{py_sitescriptdir}/jabber.pth
 rm -f $RPM_BUILD_ROOT%{py_sitedir}/jabber/*.py
+# Workaround for http://sourceforge.net/tracker/index.php?func=detail&aid=897527&group_id=30215&atid=398567
+touch $RPM_BUILD_ROOT%{py_sitedir}/jabber/__init__.py
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,6 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc CREDITS ChangeLog README
 %{py_sitescriptdir}/jabber.pth
 %dir %{py_sitedir}/jabber
+%{py_sitedir}/jabber/__init__.py
 %{py_sitedir}/jabber/*.py[co]
 %dir %{_examplesdir}/%{name}-%{version}-%{pre}
 %{_examplesdir}/%{name}-%{version}-%{pre}/*
