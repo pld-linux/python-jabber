@@ -13,6 +13,7 @@ Source0:	http://dl.sourceforge.net/jabberpy/jabberpy%{version}-0.tar.gz
 # Source0-md5:	4fc5e10c83bb12e61fbc36bb4424ad79
 URL:		http://jabberpy.sourceforge.net/
 BuildRequires:	python-modules
+BuildRequires:	python-devel
 %pyrequires_eq	python
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
