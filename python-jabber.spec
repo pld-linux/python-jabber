@@ -9,7 +9,7 @@ Version:	0.4
 Release:	1
 License:	GPL
 Group:		Libraries/Python
-Source0:	http://prdownloads.sourceforge.net/jabberpy/jabberpy%{version}-0.tar.gz
+Source0:	http://dl.sourceforge.net/jabberpy/jabberpy%{version}-0.tar.gz
 URL:		http://jabberpy.sourceforge.net/
 BuildRequires:	python-modules
 %pyrequires_eq	python
