@@ -3,7 +3,7 @@
 %define		pre	rc6
 
 Summary:	"jabber.py" Python module for Jabber applications
-Summary(pl):	Modu≥y Pythona "jabber.py" dla aplikacji Jabber
+Summary(pl.UTF-8):   Modu≈Çy Pythona "jabber.py" dla aplikacji Jabber
 Name:		python-%{module}
 Version:	0.5
 Release:	1.%{pre}.3
@@ -24,10 +24,10 @@ protocol. jabber.py deals with the XML parsing and socket code,
 leaving the programmer to concentrate on developing quality Jabber
 based applications with Python.
 
-%description -l pl
-jabber.py to modu≥ Pythona do protoko≥u komunikatora Jabber. jabber.py
-obs≥uguje analizowanie XML-a i gniazda, pozwalaj±c programi∂cie
-skoncentrowaÊ siÍ na tworzeniu w Pythonie wysokiej jako∂ci aplikacji
+%description -l pl.UTF-8
+jabber.py to modu≈Ç Pythona do protoko≈Çu komunikatora Jabber. jabber.py
+obs≈Çuguje analizowanie XML-a i gniazda, pozwalajƒÖc programi≈õcie
+skoncentrowaƒá siƒô na tworzeniu w Pythonie wysokiej jako≈õci aplikacji
 opartych na Jabberze.
 
 %prep
