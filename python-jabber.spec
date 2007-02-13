@@ -3,7 +3,7 @@
 %define		pre	rc6
 
 Summary:	"jabber.py" Python module for Jabber applications
-Summary(pl.UTF-8):   Moduły Pythona "jabber.py" dla aplikacji Jabber
+Summary(pl.UTF-8):	Moduły Pythona "jabber.py" dla aplikacji Jabber
 Name:		python-%{module}
 Version:	0.5
 Release:	1.%{pre}.3
