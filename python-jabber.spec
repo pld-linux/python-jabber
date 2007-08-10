@@ -1,16 +1,15 @@
 
 %define		module	jabber
-%define		pre	rc6
 
 Summary:	"jabber.py" Python module for Jabber applications
 Summary(pl.UTF-8):	Moduły Pythona "jabber.py" dla aplikacji Jabber
 Name:		python-%{module}
 Version:	0.5
-Release:	1.%{pre}.3
+Release:	1
 License:	GPL
 Group:		Libraries/Python
-Source0:	http://dl.sourceforge.net/jabberpy/jabberpy-%{version}-%{pre}.tar.gz
-# Source0-md5:	4254353b683f4a0af35eedac2d8d6d8f
+Source0:	http://dl.sourceforge.net/jabberpy/jabberpy-%{version}-0.tar.gz
+# Source0-md5:	cbb9a1126bdc39ff49af605fb55c282e
 URL:		http://jabberpy.sourceforge.net/
 BuildRequires:	python-modules
 BuildRequires:	python-devel
@@ -31,7 +30,7 @@ skoncentrować się na tworzeniu w Pythonie wysokiej jakości aplikacji
 opartych na Jabberze.
 
 %prep
-%setup -q -n jabberpy-%{version}-%{pre}
+%setup -q -n jabberpy-%{version}-0
 
 %build
 # next version can contain __init__.py, so check if this workaround is
@@ -43,13 +42,13 @@ python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}-%{pre}
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 python setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
-cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}-%{pre}
+cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 rm -f $RPM_BUILD_ROOT%{py_sitescriptdir}/jabber/*.py
 
@@ -60,5 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CREDITS README
 %{py_sitescriptdir}/jabber
-%dir %{_examplesdir}/%{name}-%{version}-%{pre}
-%{_examplesdir}/%{name}-%{version}-%{pre}/*
+%dir %{_examplesdir}/%{name}-%{version}
+%{_examplesdir}/%{name}-%{version}/*
