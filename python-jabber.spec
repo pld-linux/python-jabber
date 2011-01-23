@@ -8,11 +8,12 @@ Version:	0.5
 Release:	4
 License:	GPL
 Group:		Libraries/Python
-Source0:	http://dl.sourceforge.net/jabberpy/jabberpy-%{version}-0.tar.gz
+Source0:	http://downloads.sourceforge.net/jabberpy/jabberpy-%{version}-0.tar.gz
 # Source0-md5:	cbb9a1126bdc39ff49af605fb55c282e
 URL:		http://jabberpy.sourceforge.net/
-BuildRequires:	python-modules
 BuildRequires:	python-devel
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
