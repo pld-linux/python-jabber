@@ -5,7 +5,7 @@ Summary:	"jabber.py" Python module for Jabber applications
 Summary(pl.UTF-8):	Moduły Pythona "jabber.py" dla aplikacji Jabber
 Name:		python-%{module}
 Version:	0.5
-Release:	4
+Release:	5
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://downloads.sourceforge.net/jabberpy/jabberpy-%{version}-0.tar.gz
